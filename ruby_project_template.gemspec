@@ -8,16 +8,23 @@ Gem::Specification.new do |spec|
   spec.authors = ["Vraiment"]
   spec.email = ["jemc44@gmail.com"]
 
-  spec.summary = "TODO: Write a short summary, because RubyGems requires one."
-  spec.description = "TODO: Write a longer description or delete this line."
-  spec.homepage = "TODO: Put your gem's website or public repo URL here."
+  spec.summary = "Gem to function as a template with best practices baked in to build Ruby Gems."
+  spec.description = <<~DESCRIPTION
+    This Gem is supposed to be a template with several good practices built in so
+    whenever you need to create a new Gem you can just clone the repository and
+    change some files as needed, here's a list of what's built in:
+
+    - Rake
+    - RuboCop
+    - RSpec
+  DESCRIPTION
+  spec.homepage = "https://github.com/Vraiment/ruby_project_template"
   spec.required_ruby_version = ">= 2.6.0"
 
-  spec.metadata["allowed_push_host"] = "TODO: Set to your gem server 'https://example.com'"
+  spec.metadata["allowed_push_host"] = "" # Update if necessary
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "TODO: Put your gem's public repo URL here."
-  spec.metadata["changelog_uri"] = "TODO: Put your gem's CHANGELOG.md URL here."
+  spec.metadata["source_code_uri"] = "https://github.com/Vraiment/ruby_project_template"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
