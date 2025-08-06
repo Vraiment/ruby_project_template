@@ -2,6 +2,6 @@
 
 RSpec.describe RubyProjectTemplate do
   it 'has a version number' do
-    expect(RubyProjectTemplate::VERSION).not_to be nil
+    expect(RubyProjectTemplate::VERSION).not_to be_nil
   end
 end
