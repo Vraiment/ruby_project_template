@@ -14,6 +14,7 @@ Gem::Specification.new do |spec|
     whenever you need to create a new Gem you can just clone the repository and
     change some files as needed, here's a list of what's built in:
 
+    - Dependencies are local to your Gem to prevent system wide clashes
     - Rake
     - RuboCop
     - RSpec
