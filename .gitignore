@@ -1,14 +1,21 @@
 *.gem
 *.rbc
 /.config
+/.bundle/
+/.yardoc
+/_yardoc/
 /coverage/
 /InstalledFiles
+/doc/
 /pkg/
 /spec/reports/
 /spec/examples.txt
 /test/tmp/
 /test/version_tmp/
 /tmp/
+
+# rspec failure tracking
+.rspec_status
 
 # Used by dotenv library to load environment variables.
 # .env
