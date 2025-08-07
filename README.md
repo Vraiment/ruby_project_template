@@ -1,31 +1,30 @@
 # RubyProjectTemplate
 
-TODO: Delete this and the text below, and describe your gem
+`RubyProjectTemplate` is a Git repository created from my frustration with the default Bundler template, designed to enable a quick and easy way to create new Ruby Gems with "good practices" built in. These good practices are listed as follows:
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/ruby_project_template`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-## Installation
-
-TODO: Replace `UPDATE_WITH_YOUR_GEM_NAME_PRIOR_TO_RELEASE_TO_RUBYGEMS_ORG` with your gem name right after releasing it to RubyGems.org. Please do not do it earlier due to security reasons. Alternatively, replace this section with instructions to install your gem from git if you don't plan to release to RubyGems.org.
-
-Install the gem and add to the application's Gemfile by executing:
-
-    $ bundle add UPDATE_WITH_YOUR_GEM_NAME_PRIOR_TO_RELEASE_TO_RUBYGEMS_ORG
-
-If bundler is not being used to manage dependencies, install the gem by executing:
-
-    $ gem install UPDATE_WITH_YOUR_GEM_NAME_PRIOR_TO_RELEASE_TO_RUBYGEMS_ORG
+- Gems are local to your project.
+- RuboCop has no customization, you take the defaults from the tool.
+- RuboCop plugins for RSpec and Rake.
+- Binstubs generated for easy interaction.
+- Boilerplate RuboCop complaint.
 
 ## Usage
 
-TODO: Write usage instructions here
+Run the following snippet, where `GEM_NAME` is the name of your Gem:
+
+```shell
+git clone https://github.com/Vraiment/ruby_project_template "$GEM_NAME" --depth 1 && \
+    rm -rf "$GEM_FILE"/ruby_project_template.gemspec "$GEM_NAME"/.git "$GEM_NAME"/Gemfile.lock "$GEM_NAME"/README.md "$GEM_NAME"/ruby_project_template.gemspec && \
+    mv "$GEM_NAME"/LICENSE "$GEM_NAME"/LICENSE.template && \
+    git -C "$GEM_NAME" init && \
+    git -C "$GEM_NAME" add . && \
+    git -C "$GEM_NAME" commit --message 'Boilerplate'
+```
 
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/ruby_project_template.
+Bug reports and pull requests are welcome on GitHub at https://github.com/Vraiment/ruby_project_template.
