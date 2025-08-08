@@ -9,4 +9,8 @@ require 'rubocop/rake_task'
 
 RuboCop::RakeTask.new
 
-task default: %i[spec rubocop]
+require 'yard'
+
+YARD::Rake::YardocTask.new
+
+task default: %i[spec rubocop yard]
