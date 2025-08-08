@@ -1,3 +1,6 @@
 --format documentation
---color
+--out spec/reports/output.txt
+--format html
+--out spec/reports/index.html
+--format progress
 --require spec_helper
