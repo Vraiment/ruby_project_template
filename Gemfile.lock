@@ -64,6 +64,7 @@ GEM
     unicode-display_width (3.1.4)
       unicode-emoji (~> 4.0, >= 4.0.4)
     unicode-emoji (4.0.4)
+    yard (0.9.37)
 
 PLATFORMS
   x86_64-linux
@@ -76,6 +77,7 @@ DEPENDENCIES
   rubocop-rspec
   ruby-lsp
   ruby_project_template!
+  yard
 
 BUNDLED WITH
    2.4.10

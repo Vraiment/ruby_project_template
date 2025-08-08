@@ -15,3 +15,6 @@ gem 'rubocop-rspec', require: false
 
 # To enable IDE integration
 gem 'ruby-lsp', group: :development
+
+# Generate documentation
+gem 'yard', group: :development
