@@ -13,4 +13,13 @@ require 'yard'
 
 YARD::Rake::YardocTask.new
 
+CLOBBER.include(
+  # RSpec generated files
+  File.join('spec', 'reports'),
+  File.join('.rspec_status'),
+  # YARD generated files
+  File.join('.yardoc'),
+  File.join('doc')
+)
+
 task default: %i[spec rubocop yard]
