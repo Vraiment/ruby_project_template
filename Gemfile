@@ -18,3 +18,8 @@ gem 'ruby-lsp', group: :development
 
 # Generate documentation
 gem 'yard', group: :development
+
+# For type checking
+gem 'sorbet', group: :development
+gem 'sorbet-runtime'
+gem 'tapioca', require: false, group: :development
