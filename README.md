@@ -14,7 +14,7 @@ Run the following snippet, where `GEM_NAME` is the name of your Gem:
 
 ```shell
 git clone https://github.com/Vraiment/ruby_project_template "$GEM_NAME" --depth 1 && \
-    rm -rf "$GEM_FILE"/ruby_project_template.gemspec "$GEM_NAME"/.git "$GEM_NAME"/Gemfile.lock "$GEM_NAME"/README.md "$GEM_NAME"/ruby_project_template.gemspec && \
+    rm -rf "$GEM_FILE"/ruby_project_template.gemspec "$GEM_NAME"/.git "$GEM_NAME"/Gemfile.lock "$GEM_NAME"/README.md "$GEM_NAME"/ruby_project_template.gemspec "$GEM_NAME"/sorbet && \
     mv "$GEM_NAME"/LICENSE "$GEM_NAME"/LICENSE.template && \
     git -C "$GEM_NAME" init && \
     git -C "$GEM_NAME" add . && \
